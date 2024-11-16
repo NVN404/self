@@ -10,7 +10,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState('');
   const chatContainerRef = useRef(null);
-  const API_KEY = 'AIzaSyA3NP120hd4bj2q1VDZeDWCYKTrefPF6s0';
+  const API_KEY = '';
   // Initialize Google Generative AI
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
